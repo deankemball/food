@@ -1,8 +1,7 @@
 "use client";
 import NavBar from "@/components/NavBar";
-import clsx from "clsx";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
+import TitleBar from "@/components/TitleBar";
+
 import { useState } from "react";
 import "./globals.css";
 
@@ -11,7 +10,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const router = useRouter();
   const [showHeader, setShowHeader] = useState(false);
   return (
     <html lang="en">
@@ -20,31 +18,8 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className="py-4 h-screen w-screen gap-4 flex flex-col font-ibm">
-        <div className="overflow-x-clip">
-          <div
-            className={clsx(
-              showHeader ? "translate-x-0" : "-translate-x-[80%]",
-              "h-12 w-[125vw] flex items-center justify-center transition-transform duration-300 text-light bg-dark"
-            )}
-          >
-            <h1
-              onClick={() => setShowHeader(false)}
-              className="flex flex-1 text-2xl justify-center"
-            >
-              roasted.fyi
-            </h1>
-            <button
-              onClick={() => {
-                setShowHeader(true);
-                router.push("/");
-              }}
-              className="flex flex-[0.25] justify-center"
-            >
-              {"<"}
-            </button>
-          </div>
-        </div>
+      <body className="h-fit w-screen flex flex-col font-ibm border-x-[2px] border-light bg-dark">
+        <TitleBar showHeader={showHeader} setShowHeader={setShowHeader} />
         {children}
         <NavBar />
       </body>

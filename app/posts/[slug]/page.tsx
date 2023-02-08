@@ -18,16 +18,18 @@ export default async function Post({ params }: { params: { slug: string } }) {
 
   return (
     <main>
-      <div className="w-full aspect-square overflow-hidden bg-dark">
-        <Image
-          alt={`cover image for ${post.title}`}
-          src={post.coverImage}
-          width={400}
-          height={400}
-        />
+      <div className="w-full aspect-square overflow-hidden bg-dark relative">
+        <div className="w-full aspect-square overflow-hidden relative flex items-center h-full px-8 py-4">
+          <Image
+            alt={`cover image for ${post.title}`}
+            src={post.coverImage}
+            width={400}
+            height={400}
+          />
+          <div className="absolute inset-8 blurry-edge z-10"></div>
+        </div>
       </div>
       <div className="w-full flex flex-col bg-dark text-light">
-        <h2 className="text-2xl text-center px-4">{post.title}</h2>
         <div className="flex gap-2 justify-between px-4">
           <p className="text-md">{`${post.rating}/5`}</p>
           <p className="text-md">{`${post.venue}`}</p>

@@ -3,3 +3,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  box-sizing: content;
+}
+
+.blurry-edge {
+  box-shadow: 0 0 24px 24px #111111 inset;
+}

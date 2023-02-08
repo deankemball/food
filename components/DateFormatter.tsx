@@ -7,8 +7,8 @@ type DateFormatterProps = {
 const DateFormatter = ({ dateString }: DateFormatterProps) => {
   const date = parseISO(dateString);
   return (
-    <time className="text-slate-400" dateTime={dateString}>
-      {format(date, "LLLL d, yyyy")}
+    <time className="text-light self-end" dateTime={dateString}>
+      {format(date, "yyyymmdd")}
     </time>
   );
 };
