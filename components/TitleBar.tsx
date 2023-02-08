@@ -10,10 +10,14 @@ interface TitleBarProps {
 const TitleBar = ({ showHeader, setShowHeader }: TitleBarProps) => {
   const router = useRouter();
   const path = usePathname();
-  const [pathTitle, setPathTitle] = useState<string>();
+  const [pathTitle, setPathTitle] = useState<string>("");
 
   useEffect(() => {
-    setPathTitle(path?.includes("posts") ? path.split("posts/")[1] : "");
+    setPathTitle(
+      path?.includes("posts")
+        ? path.split("posts/")[1].replaceAll("-", " ")
+        : ""
+    );
     setShowHeader(Boolean(!path?.includes("posts")));
   }, [path]);
 
@@ -34,7 +38,7 @@ const TitleBar = ({ showHeader, setShowHeader }: TitleBarProps) => {
             className="flex w-full justify-center px-4"
           >
             <span className="flex w-4">{"<"}</span>
-            <span className="flex flex-1 justify-center -translate-x-2">
+            <span className="flex flex-1 justify-center -translate-x-2 leading-none">
               {pathTitle}
             </span>
           </button>

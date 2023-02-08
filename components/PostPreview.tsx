@@ -18,7 +18,7 @@ export default function PostPreview({ post }: { post: PostPreviewProps }) {
               width={400}
               height={400}
             />
-            <div className="absolute inset-0 blurry-edge z-10"></div>
+            <div className="absolute inset-0 blurry-edge z-10 md:mr-8 md:mb-8"></div>
           </div>
         )}
         <div className="flex flex-col">

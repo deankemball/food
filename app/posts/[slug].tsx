@@ -1,8 +1,9 @@
-import { getPostBySlug } from "../../../lib/api";
-import mdToHtml from "../../../lib/mdToHtml";
+import { getPostBySlug } from "../../lib/api";
+import mdToHtml from "../../lib/mdToHtml";
 import markdownStyles from "./markdown-styles.module.css";
 import Image from "next/image";
 import clsx from "clsx";
+import { useRouter } from "next/router";
 
 export default async function Post({ params }: { params: { slug: string } }) {
   const post = getPostBySlug(params.slug, [
