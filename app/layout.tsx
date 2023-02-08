@@ -20,19 +20,19 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className="py-4 h-screen w-screen gap-4 flex flex-col">
+      <body className="py-4 h-screen w-screen gap-4 flex flex-col font-ibm">
         <div className="overflow-x-clip">
           <div
             className={clsx(
               showHeader ? "translate-x-0" : "-translate-x-[80%]",
-              "h-12 w-[125vw] flex items-center justify-center transition-transform duration-300 bg-red-300"
+              "h-12 w-[125vw] flex items-center justify-center transition-transform duration-300 text-light bg-dark"
             )}
           >
             <h1
               onClick={() => setShowHeader(false)}
               className="flex flex-1 text-2xl justify-center"
             >
-              food blog
+              roasted.fyi
             </h1>
             <button
               onClick={() => {

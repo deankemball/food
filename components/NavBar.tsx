@@ -10,12 +10,12 @@ const NavBar = () => {
 
   return (
     <div>
-      <ul className="flex justify-center gap-2 h-8 items-center fixed bottom-2 right-2 bg-white">
+      <ul className="flex justify-around gap-2 h-8 items-center bg-dark text-light px-4 py-2">
         {links.map((link) => {
           return (
             <li key={link.display}>
               <Link href={link.link}>
-                <p className="cursor-pointer">{link.display}</p>
+                <p className="cursor-pointer flex-1 flex">{link.display}</p>
               </Link>
             </li>
           );

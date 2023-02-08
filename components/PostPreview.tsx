@@ -8,7 +8,7 @@ type PostPreviewProps = {
 
 export default function PostPreview({ post }: { post: PostPreviewProps }) {
   return (
-    <div className="w-full">
+    <div className="w-full bg-dark px-8 py-4">
       <Link href={`/posts/${post.slug}`}>
         {post?.coverImage && (
           <div className="w-full aspect-square overflow-hidden">
