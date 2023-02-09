@@ -1,10 +1,10 @@
 ---
-title: "what happened to those plastic tables"
+title: '"bagels"'
 excerpt: "Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus."
 coverImage: "/blog/first-post.png"
 date: "2022-11-14T05:35:07.322Z"
 author: "Dean"
-venue: "papa johns"
+venue: "bagel brothers"
 rating: 1
 price: "€"
 ---

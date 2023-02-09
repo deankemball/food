@@ -15,4 +15,5 @@ module.exports = {
     },
   },
   plugins: [],
+  safelist: ["-translate-x-1/3", "translate-0", "translate-x-1/3"],
 };

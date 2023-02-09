@@ -18,9 +18,10 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className="h-fit w-screen flex flex-col font-ibm border-x-[2px] border-light bg-dark">
+      <body className="h-screen w-screen flex flex-col font-ibm bg-dark relative overscroll-none">
+        <div className="fixed inset-0 z-50 border-[2px] border-light pointer-events-none rounded-2xl"></div>
         <TitleBar showHeader={showHeader} setShowHeader={setShowHeader} />
-        {children}
+        <main className="pt-16">{children}</main>
         <NavBar />
       </body>
     </html>

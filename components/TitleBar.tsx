@@ -22,11 +22,11 @@ const TitleBar = ({ showHeader, setShowHeader }: TitleBarProps) => {
   }, [path]);
 
   return (
-    <div className="overflow-x-clip top-0 left-0 right-0 sticky z-50">
+    <div className="overflow-x-clip top-0 left-0 right-0 fixed z-40">
       <div
         className={clsx(
           showHeader ? "translate-x-0" : "-translate-x-[50%]",
-          "h-16 w-[200vw] flex items-center justify-start transition-transform duration-300 text-light bg-dark border-y-[2px] border-light text-2xl"
+          "h-16 w-[200vw] flex items-center justify-start transition-transform duration-300 text-light bg-dark border-b-[2px] border-light text-2xl"
         )}
       >
         <h1 className="flex flex-1 w-[100vw] justify-center">roasted.fyi</h1>
