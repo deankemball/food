@@ -35,7 +35,7 @@ const TitleBar = ({ showHeader, setShowHeader }: TitleBarProps) => {
             onClick={() => {
               router.back();
             }}
-            className="flex w-full justify-center px-4"
+            className="flex w-full justify-center px-4 items-center"
           >
             <span className="flex w-4">{"<"}</span>
             <span className="flex flex-1 justify-center -translate-x-2 leading-none">

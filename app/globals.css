@@ -6,8 +6,14 @@
 
 * {
   box-sizing: content;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .blurry-edge {
   box-shadow: 0 0 24px 24px #111111 inset;
+}
+
+*::-webkit-scrollbar {
+  display: none;
 }
