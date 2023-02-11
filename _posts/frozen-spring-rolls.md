@@ -1,10 +1,10 @@
 ---
-title: "what happened to those plastic tables"
+title: "frozen spring rolls"
 excerpt: "Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus."
-coverImage: "/blog/pizza-box.png"
+coverImage: "/blog/spring-rolls.png"
 date: "2022-11-14T05:35:07.322Z"
 author: "Dean"
-venue: "papa johns"
+venue: "asian place"
 rating: 1
 price: "€"
 ---

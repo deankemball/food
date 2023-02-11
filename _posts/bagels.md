@@ -1,7 +1,7 @@
 ---
 title: '"bagels"'
 excerpt: "Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus."
-coverImage: "/blog/first-post.png"
+coverImage: "/blog/bagel-brothers.png"
 date: "2022-11-14T05:35:07.322Z"
 author: "Dean"
 venue: "bagel brothers"

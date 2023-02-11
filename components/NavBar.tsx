@@ -10,7 +10,7 @@ const NavBar = () => {
     { display: "contact", link: "/contact", hover: "translate-x-1/3" },
   ];
 
-  // const path = usePathname();
+  const path = usePathname();
   // const [xTransform, setXTransform] = useState<string>("");
   // // console.log(path);
   // useEffect(() => {
@@ -27,7 +27,15 @@ const NavBar = () => {
           return (
             <li key={link.display} className="flex flex-1 justify-center">
               <Link href={link.link}>
-                <p className="cursor-pointer">{link.display}</p>
+                <p
+                  className={clsx(
+                    path === link.link &&
+                      "underline decoration-light decoration-[2px] underline-offset-2",
+                    "cursor-pointer transition-all"
+                  )}
+                >
+                  {link.display}
+                </p>
               </Link>
             </li>
           );

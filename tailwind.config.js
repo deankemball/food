@@ -3,7 +3,7 @@ module.exports = {
   content: ["./app/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   theme: {
     colors: {
-      dark: "#111111",
+      dark: "#000000",
       accent: "#d8b4fe",
       light: "#f9fafb",
       alert: "#ff475a",

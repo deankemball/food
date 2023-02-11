@@ -19,7 +19,7 @@ const TitleBar = ({ showHeader, setShowHeader }: TitleBarProps) => {
         : ""
     );
     setShowHeader(Boolean(!path?.includes("posts")));
-  }, [path]);
+  }, [path, setShowHeader]);
 
   return (
     <div className="overflow-x-clip top-0 left-0 right-0 fixed z-40">

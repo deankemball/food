@@ -7,7 +7,10 @@ type DateFormatterProps = {
 const DateFormatter = ({ dateString }: DateFormatterProps) => {
   const date = parseISO(dateString);
   return (
-    <time className="text-light flex flex-1 justify-end" dateTime={dateString}>
+    <time
+      className="text-light/50 flex w-fit justify-end text-sm leading-8"
+      dateTime={dateString}
+    >
       {format(date, "yyyymmdd")}
     </time>
   );
